@@ -10,7 +10,7 @@ export const addMessage = (message) => {
 
 export const removeMessage = id => {
     return{
-        type: "REMOVE_MESSAGE"
+        type: "REMOVE_MESSAGE",
         payload: { id }
 
     };

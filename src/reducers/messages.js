@@ -5,7 +5,7 @@ const messages = (state = [], action) => {
                 ...state,
                 {
                     id:action.id,
-                    message: action, message
+                    messages: action, messages
                 }
             ];
         case "REMOVE_MESSAGE":

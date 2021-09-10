@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <h1>Message Queue</h1>
       <h3>{messages}</h3>
-      <button onClick={() => dispatch(addMessage('message'))}></button>
+      <button onClick={() => dispatch(addMessage())}></button>
     </div>
   );
 }

@@ -10,13 +10,23 @@ function App() {
   const dispatch = useDispatch();
 
 
+  }
 
 
   return (
     <div className="App">
-      <h1>Message Queue</h1>
+      <h1>Message Impossible</h1>
       <h3>{messages}</h3>
-      <button onClick={() => dispatch(addMessage())}></button>
+      <form >
+      <textarea
+            type="text"
+            name="message"
+            placeholder="message"
+          
+          />
+          </form>
+    
+      <button onClick={() => dispatch(addMessage())} >Submit</button>
     </div>
   );
 }

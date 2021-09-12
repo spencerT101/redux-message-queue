@@ -1,14 +1,18 @@
-const messages = (state = [], action) => {
+import * as actions from "./actionTypes";
+
+let newMessage = 1
+
+const message = (state = [], action) => {
     switch (action.type){
-        case "ADD_MESSAGE":
+        case actions.ADD_MESSAGE:
             return [
                 ...state,
                 {
-                    id:action.id,
-                    messages: action, messages
+                    id:newMessage++,
+                    message: action.payload.message
                 }
             ];
-        case "REMOVE_MESSAGE":
+        case actions.REMOVE_MESSAGE:
             return state.filter(message => message.id !==action.payload.id);
         
         default:
@@ -16,4 +20,4 @@ const messages = (state = [], action) => {
     }
 };
 
-export default messages;
+export default message;

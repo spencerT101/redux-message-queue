@@ -1,8 +1,8 @@
-import messages from "./messages";
+import message from "./messages";
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
-    messages: messages
+    message: message
 });
 
 export default allReducers;

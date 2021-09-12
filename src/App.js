@@ -6,7 +6,7 @@ import {removeMessage} from "./actions";
 
 function App() {
 
-  const messages = useSelector(state => state.messages);
+  const messages = useSelector(state => state.message);
   const dispatch = useDispatch();
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <h1>Message Impossible</h1>
-      <h3>{messages}</h3>
+      <h3>{messages.message}</h3>
     
       <form >
       <textarea

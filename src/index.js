@@ -27,14 +27,14 @@ const store = createStore(allReducers,
 
   console.log(store.getState())
 
-  unsubscribe();
+  // unsubscribe();
 
-  store.dispatch({
-    type: REMOVE_MESSAGE,
-    payload:{
-      id:1
-    }
-  })
+  // store.dispatch({
+  //   type: REMOVE_MESSAGE,
+  //   payload:{
+  //     id:1
+  //   }
+  // })
 
   console.log(store.getState())
 

@@ -3,18 +3,27 @@ import './App.css';
 import {useSelector, useDispatch} from 'react-redux';
 import {addMessage} from "./actions";
 import {removeMessage} from "./actions";
+import message from './reducers/messages';
 
 function App() {
 
-  const messages = useSelector(state => state.message);
+  const messages = useSelector(state => state);
   const dispatch = useDispatch();
+
+  const eachMessage = message.map((eachMessage, index) => {
+    return <messageItem eachMessage={eachMessage}   key={index} />
+});
+
+const messageItem =({eachMessage}) =>{
 
 
 
   return (
     <div className="App">
       <h1>Message Impossible</h1>
-      <h3>{messages.message}</h3>
+      <ul>{eachMessage}</ul>
+      <h3>{eachMessage.message}</h3>
+
     
       <form >
       <textarea
@@ -31,6 +40,6 @@ function App() {
     </div>
   );
 
-}
+}}
 
 export default App;

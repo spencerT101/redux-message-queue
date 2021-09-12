@@ -6,15 +6,15 @@ import {removeMessage} from "./actions";
 
 function App() {
 
-  // const messages = useSelector(state => state.messages);
-  // const dispatch = useDispatch();
+  const messages = useSelector(state => state.messages);
+  const dispatch = useDispatch();
 
 
 
   return (
     <div className="App">
       <h1>Message Impossible</h1>
-      {/* <h3>{messages}</h3> */}
+      <h3>{messages}</h3>
     
       <form >
       <textarea
@@ -26,7 +26,7 @@ function App() {
           />
           
     
-      {/* <button onClick={() => dispatch(addMessage())} >Submit</button> */}
+      <button onClick={() => dispatch(addMessage())} >Submit</button>
       </form>
     </div>
   );

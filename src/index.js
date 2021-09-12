@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import allReducers from "./reducers";
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
-import { ADD_MESSAGE } from './reducers/actionTypes';
+import { ADD_MESSAGE, REMOVE_MESSAGE } from './reducers/actionTypes';
 
 const store = createStore(allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -27,9 +27,16 @@ const store = createStore(allReducers,
 
   console.log(store.getState())
 
-  // store.dispatch({
-  //   type: "REMOVE_"
-  // })
+  unsubscribe();
+
+  store.dispatch({
+    type: REMOVE_MESSAGE,
+    payload:{
+      id:1
+    }
+  })
+
+  console.log(store.getState())
 
 
 ReactDOM.render(

@@ -2,6 +2,7 @@ import { ADD_MESSAGE, REMOVE_MESSAGE } from "../reducers/actionTypes";
 import { store } from '../index';
 
 let newMessage = 0
+
 export const addMessage = (message) => {
     const id = ++newMessage
 

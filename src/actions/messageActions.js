@@ -1,5 +1,5 @@
 import { ADD_MESSAGE, REMOVE_MESSAGE } from "../reducers/actionTypes";
-import { store } from '../index';
+import store from '../store/store';
 
 let newMessage = 0
 

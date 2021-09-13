@@ -1,11 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { useDispatch} from 'react-redux';
 import {addMessage} from "./actions";
-import {removeMessage} from "./actions";
-import * as message from './reducers/messages';
 import MessageList from './components/messagelist';
-import { ADD_MESSAGE } from './reducers/actionTypes';
 import { useState } from 'react';
 
 // import { ADD_MESSAGE } from './reducers/actionTypes';

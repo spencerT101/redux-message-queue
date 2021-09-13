@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import message from './reducers/messages';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
-import { ADD_MESSAGE, REMOVE_MESSAGE } from './reducers/actionTypes';
+
 
 export const store = createStore(message,
   window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()

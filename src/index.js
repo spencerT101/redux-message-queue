@@ -25,6 +25,14 @@ const store = createStore(allReducers,
   
   })
 
+  store.dispatch({
+    type: ADD_MESSAGE,
+    payload:{ 
+      message:"hello"
+    }
+  
+  })
+
   console.log(store.getState())
 
   // unsubscribe();

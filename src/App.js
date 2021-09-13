@@ -4,6 +4,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {addMessage} from "./actions";
 import {removeMessage} from "./actions";
 import message from './reducers/messages';
+import messageList from './components/messagelist';
 
 function App() {
 
@@ -14,15 +15,14 @@ function App() {
     return <messageItem eachMessage={eachMessage}   key={index} />
 });
 
-const messageItem =({eachMessage}) =>{
+
 
 
 
   return (
     <div className="App">
       <h1>Message Impossible</h1>
-      <ul>{eachMessage}</ul>
-      <h3>{eachMessage.message}</h3>
+      <messageList message = {message}/>
 
     
       <form >
@@ -40,6 +40,6 @@ const messageItem =({eachMessage}) =>{
     </div>
   );
 
-}}
+}
 
 export default App;

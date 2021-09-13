@@ -4,12 +4,12 @@ import {useSelector, useDispatch} from 'react-redux';
 import {addMessage} from "./actions";
 import {removeMessage} from "./actions";
 import message from './reducers/messages';
-import messageList from './components/messagelist';
+import MessageList from './components/messagelist';
 
 function App() {
 
-//   const messages = useSelector(state => state);
-//   const dispatch = useDispatch();
+  const messages = useSelector(state => state);
+  const dispatch = useDispatch();
 
 //   const eachMessage = message.map((eachMessage, index) => {
 //     return <messageItem eachMessage={eachMessage}   key={index} />
@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <h1>Message Impossible</h1>
+      <MessageList messages ={messages}/>
      
 
     
@@ -35,7 +36,7 @@ function App() {
           />
           
     
-      <button onClick={() => dispatch(addMessage())} >Submit</button>
+      {/* <button onClick={() => dispatch(addMessage())} >Submit</button> */}
       </form>
     </div>
   );

@@ -1,11 +1,11 @@
-const messageItem =({eachMessage}) =>{
+const MessageItem =({message}) =>{
 
 
     return(
         <div>
-            <li>{eachMessage.message}</li>
+            <li>{message.message}</li>
         </div>
     )
 }
 
-export default messageItem;
+export default MessageItem;

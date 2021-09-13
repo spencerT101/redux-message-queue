@@ -3,7 +3,7 @@ import {addMessage} from "./actions/messageActions";
 import MessageList from './components/messagelist';
 import { useState } from 'react';
 
-// import { ADD_MESSAGE } from './reducers/actionTypes';
+
 
 function App() {
 

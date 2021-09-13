@@ -1,12 +1,21 @@
-# Getting Started with Create React App
+This is a take home assignment to build a message queue feature using javascript, JSX, HTML & CSS. It is built in react-redux.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MVP
+- There should be a text box.
+- A user can write a message and submit it where it will be added to the redux store.
+- The message will then be retrieved from the redux store and display in a notification space.
+- After 5 seconds the message is then removed from the store.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Clone the repository and in the main folder run 'npm install' from the terminal. Once installation has completed and all dependencies have been installed, run 'npm start'. Use the app on 'localhost:3000'.
 
-### `npm start`
+## Dependencies/Libraries/Packages
+
+ - ReactJS
+ - React-Redux
+
+## Checklist:
 
 - removed unused imports
 - double check method and var naming (example message to message reducer) actions too;

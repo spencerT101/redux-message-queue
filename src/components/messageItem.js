@@ -1,7 +1,7 @@
-const MessageItem =({message}) =>{
+const MessageItem = ({ message }) => {
 
 
-    return(
+    return (
         <div>
             <li>{message}</li>
         </div>

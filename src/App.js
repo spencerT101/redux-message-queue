@@ -8,12 +8,12 @@ import messageList from './components/messagelist';
 
 function App() {
 
-  const messages = useSelector(state => state);
-  const dispatch = useDispatch();
+//   const messages = useSelector(state => state);
+//   const dispatch = useDispatch();
 
-  const eachMessage = message.map((eachMessage, index) => {
-    return <messageItem eachMessage={eachMessage}   key={index} />
-});
+//   const eachMessage = message.map((eachMessage, index) => {
+//     return <messageItem eachMessage={eachMessage}   key={index} />
+// });
 
 
 
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <h1>Message Impossible</h1>
-      <messageList message = {message}/>
+     
 
     
       <form >

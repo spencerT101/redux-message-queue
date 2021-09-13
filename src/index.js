@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import message from './reducers/messages';
+import messageReducer from './reducers/messagesReducer';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 
 
-export const store = createStore(message,
+export const store = createStore(messageReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()
   );
   

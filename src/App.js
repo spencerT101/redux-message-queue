@@ -1,5 +1,5 @@
 import './App.css';
-import {addMessage} from "./actions";
+import {addMessage} from "./actions/messageActions";
 import MessageList from './components/messagelist';
 import { useState } from 'react';
 

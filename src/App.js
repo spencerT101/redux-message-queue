@@ -3,15 +3,22 @@ import './App.css';
 import { useDispatch} from 'react-redux';
 import {addMessage} from "./actions";
 import {removeMessage} from "./actions";
-import message from './reducers/messages';
+import * as message from './reducers/messages';
 import MessageList from './components/messagelist';
 import { ADD_MESSAGE } from './reducers/actionTypes';
+
+// import { ADD_MESSAGE } from './reducers/actionTypes';
 
 function App() {
 
   // const messages = useSelector(state => state);
  
    const dispatch = useDispatch();
+
+   const handleNewMessage = (event) => {
+     addMessage("message")
+    }
+  
 
 //   const eachMessage = message.map((eachMessage, index) => {
 //     return <messageItem eachMessage={eachMessage}   key={index} />
@@ -37,7 +44,7 @@ return (
           />
           
   
-     <button onClick={() => dispatch({type: ADD_MESSAGE})} >Submit</button> 
+     <button onClick={handleNewMessage} >Submit</button> 
       </form>
     </div>
   );

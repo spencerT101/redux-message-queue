@@ -6,25 +6,18 @@ import {removeMessage} from "./actions";
 import * as message from './reducers/messages';
 import MessageList from './components/messagelist';
 import { ADD_MESSAGE } from './reducers/actionTypes';
+import { useState } from 'react';
 
 // import { ADD_MESSAGE } from './reducers/actionTypes';
 
 function App() {
 
-  // const messages = useSelector(state => state);
- 
-   const dispatch = useDispatch();
-
+  const [message, setMessage] = useState('');
    const handleNewMessage = (event) => {
-     addMessage("message")
+
+     event.preventDefault();
+      addMessage(message)
     }
-  
-
-//   const eachMessage = message.map((eachMessage, index) => {
-//     return <messageItem eachMessage={eachMessage}   key={index} />
-// });
-
-
 
 
 return (
@@ -39,6 +32,7 @@ return (
             type="text"
             name="message"
             placeholder="message"
+            onChange = {event => setMessage(event.target.value)}
             required
           
           />

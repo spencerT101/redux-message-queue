@@ -6,8 +6,8 @@ export const addMessage = (message) => {
     const id = ++newMessage
 
     store.dispatch(setMessage(id, message))
-    // setTimeout(() => {
-    //     message.dispatch(removeMessage(id))}, 5000); 
+     setTimeout(() => {
+         store.dispatch(removeMessage(id))}, 5000); 
 }
 
 
@@ -26,7 +26,7 @@ export const setMessage = (id, message) =>{
 export const removeMessage = id => {
     return{
         type: REMOVE_MESSAGE,
-        payload: { id }
+        id
 
     };
 };

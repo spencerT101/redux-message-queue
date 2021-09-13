@@ -3,7 +3,7 @@ const MessageItem =({message}) =>{
 
     return(
         <div>
-            <li>{message.message}</li>
+            <li>{message}</li>
         </div>
     )
 }

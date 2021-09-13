@@ -1,23 +1,28 @@
 import * as actions from "./actionTypes";
 
-let newMessage = 1
+const initialState = {
+    messages:[]
+}
 
-const message = (state = [], action) => {
+export default function message (state = initialState, action) {
     switch (action.type){
         case actions.ADD_MESSAGE:
-            return [
-                ...state,
+            return Object.assign({}, state, {messages:[
+                ...state.messages,
                 {
-                    id:newMessage++,
-                    message: action.payload.message
+                    id: action.id,
+                    message: action.message
                 }
-            ];
+            ]});
+            
         case actions.REMOVE_MESSAGE:
-            return state.filter(message => message.id !==action.payload.id);
+            let newArray =state.messages;
+             
+            let x = newArray.filter(message => message.id !== action.id);
+            return Object.assign({}, state, {messages:x});
         
         default:
             return state;
     }
 };
 
-export default message;

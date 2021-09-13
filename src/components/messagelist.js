@@ -2,7 +2,7 @@ import MessageItem from "./messageItem";
 import { useSelector } from "react-redux";
 import React from "react";
 
-const selectMessage = state => state.message
+const selectMessage = state => state.messages;
 
 
 const MessageList = () =>{
@@ -11,7 +11,7 @@ const MessageList = () =>{
 
 
   const renderedMessage = messages.map( message =>{
-      return <MessageItem key = {message.id} message = {message}/>
+      return <MessageItem key = {message.id} message = {message.message}/>
   })
   return <ul>{renderedMessage}</ul>
 }

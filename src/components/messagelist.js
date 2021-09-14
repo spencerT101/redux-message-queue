@@ -1,6 +1,7 @@
 import MessageItem from "./messageItem";
 import { useSelector } from "react-redux";
 import React from "react";
+import './messageItem.css'
 
 const selectMessage = state => state.messages;
 
@@ -13,7 +14,7 @@ const MessageList = () =>{
   const renderedMessage = messages.map( message =>{
       return <MessageItem key = {message.id} message = {message.message}/>
   })
-  return <ul>{renderedMessage}</ul>
+  return <ul id = "messages">{renderedMessage}</ul>
 }
 
 export default MessageList;

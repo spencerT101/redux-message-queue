@@ -9,11 +9,14 @@
   font-size: 100px;
 }
 
-#tile-display{
+#top-layer{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 50px;
+  width: auto;
+  height: auto;
+
 }
 
 #middle-layer{

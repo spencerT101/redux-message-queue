@@ -18,7 +18,7 @@ const handleNewMessage = (event) => {
 
 return (
 <div>
-<form id = "messageForm" >
+<form>
 <textarea
   type="text"
   name="message"

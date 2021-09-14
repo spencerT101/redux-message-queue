@@ -1,8 +1,10 @@
+import './messageItem.css'
+
 const MessageItem = ({ message }) => {
 
 
     return (
-        <div>
+        <div >
             <li>{message}</li>
         </div>
     )

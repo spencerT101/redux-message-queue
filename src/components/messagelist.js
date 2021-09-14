@@ -5,11 +5,9 @@ import './messageItem.css'
 
 const selectMessage = state => state.messages;
 
-
 const MessageList = () =>{
 
-    const messages = useSelector(selectMessage);
-
+  const messages = useSelector(selectMessage);
 
   const renderedMessage = messages.map( message =>{
       return <MessageItem key = {message.id} message = {message.message}/>
@@ -18,4 +16,3 @@ const MessageList = () =>{
 }
 
 export default MessageList;
-

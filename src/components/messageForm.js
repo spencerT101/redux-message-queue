@@ -1,36 +1,35 @@
-import { addMessage } from "../actions/messageActions";
+import { setMessage } from "../actions/messageActions";
 import { useState } from "react";
 import "./messageForm.css"
 
 const MessageForm = function () { 
   
-  const [message, setMessage] = useState('');
+  const [message, updateMessage] = useState('');
 
 const handleNewMessage = (event) => {
   if (!message.length) {
-    alert("Please write a message")
+    alert("Did you think it would be that easy agent? Write a message to complete your mission!")
     return;
   } else {
     event.preventDefault();
-    addMessage(message)
+    setMessage(message)
   }
 }
 
 return (
-<div>
-<form>
-<textarea
-  type="text"
-  name="message"
-  placeholder="message"
-  onChange={event => setMessage(event.target.value)}
-  id = "text-box"
-  />
-
- <button onClick={handleNewMessage} id = "button">Submit</button>
-</form>
-</div>
-  
+    <div>
+        <form>
+            <input
+                alt="message box"
+                type="text"
+                name="message"
+                placeholder="message"
+                onChange={event => updateMessage(event.target.value)}
+                id = "text-box"
+            />
+            <button onClick={handleNewMessage} id = "button">Submit</button>
+        </form>
+    </div>  
 )}
 
 export default MessageForm;

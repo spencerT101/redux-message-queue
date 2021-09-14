@@ -7,10 +7,10 @@ function App() {
     <div className="App">
         <h1 id="title">Message Impossible</h1>
         <div id = "top-layer">
-            <MessageList />
+          <MessageForm/>  
         </div>
         <div id = "middle-layer">
-            <MessageForm/>
+          <MessageList />
         </div>
         {/* <div id ="bottom-layer" >
           <h2>The Mission :</h2>

@@ -11,8 +11,17 @@
   width: 250px;
 }
 
+ul{
+  justify-content: center;
+  margin-right:3%;
+}
+
 li{
-  height:50px;
+  height:30px;
   font-family: 'Special Elite', cursive;
+  background-color: white;
+  padding:10px;
+  border-radius: 20px;
+  text-align: center;
 }
 

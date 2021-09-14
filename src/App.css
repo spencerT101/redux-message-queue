@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina&display=swap');
 
+
 .App {
   text-align: center;
+
 }
 
 #title{
   font-family: 'Karantina', cursive;
   font-size: 100px;
+  color:rgba(181, 181, 181, 0.99);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
 }
 
 #top-layer{

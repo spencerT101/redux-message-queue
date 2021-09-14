@@ -14,6 +14,7 @@ Clone the repository and in the main folder run 'npm install' from the terminal.
 
  - ReactJS
  - React-Redux
+ - Material-UI
 
 ## Checklist:
 

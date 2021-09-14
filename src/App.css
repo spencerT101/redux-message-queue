@@ -21,7 +21,6 @@
   padding-top: 50px;
   width: auto;
   height: auto;
-
 }
 
 #middle-layer{
@@ -33,4 +32,7 @@
   padding: 0px;
 }
 
+#the-mission{
+  margin-top:-15px;
+}
 

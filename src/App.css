@@ -33,14 +33,4 @@
   padding: 0px;
 }
 
-#bottom-layer{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  padding: 0px;
-  width:300px;
-  background-color: white;
 
-}

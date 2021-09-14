@@ -1,6 +1,8 @@
 import { setMessage } from "../actions/messageActions";
 import { useState } from "react";
 import "./messageForm.css"
+import Button from '@material-ui/core/Button';
+
 
 const MessageForm = function () { 
   
@@ -27,7 +29,7 @@ return (
                 onChange={event => updateMessage(event.target.value)}
                 id = "text-box"
             />
-            <button onClick={handleNewMessage} id = "button">Submit</button>
+            <Button variant="contained" onClick={handleNewMessage} id = "button">Submit</Button>
         </form>
     </div>  
 )}

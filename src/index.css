@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(images/MI.jpeg);
+  /* background-image: url(public/images/MI.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%, 100%;
+  background-size: 100%, 100%; */
 }
 
 code {

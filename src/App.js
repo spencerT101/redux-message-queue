@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Message Impossible</h1>
+      <h1 id="title">Message Impossible</h1>
       <MessageList />
       <MessageForm/>
     </div>

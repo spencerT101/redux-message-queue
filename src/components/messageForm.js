@@ -1,5 +1,6 @@
 import { addMessage } from "../actions/messageActions";
 import { useState } from "react";
+import "./messageForm.css"
 
 const MessageForm = function () { 
   
@@ -23,9 +24,10 @@ return (
   name="message"
   placeholder="message"
   onChange={event => setMessage(event.target.value)}
+  id = "text-box"
   />
 
- <button onClick={handleNewMessage} >Submit</button>
+ <button onClick={handleNewMessage} id = "button">Submit</button>
 </form>
 </div>
   

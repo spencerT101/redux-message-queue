@@ -8,3 +8,19 @@
   font-family: 'Karantina', cursive;
   font-size: 100px;
 }
+
+#tile-display{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#middle-layer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 0px;
+}
